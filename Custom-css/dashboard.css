@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+}
+
+.nav-section{
+    background: white;
+}
+
+
+.container-fluid .wrapper .task .sub-nav{
+    background-color: white;
+    z-index: +3;
+}
+
+.container-fluid .wrapper .task .listing{
+    margin-top: 5rem;
+}
+
+.container-fluid .wrapper .task .listing .description{
+    background-color: white;
+    margin-top: 1rem;  
+}
+
+.container-fluid .wrapper .task .description .tag{
+    height: 100%;
+}
+
+.container-fluid .wrapper .task .description .note{
+    width: 80%;
+}
+
+.container-fluid .wrapper .task .description .note .description-wrapper{
+    word-wrap: break-word;
+}
+
+.container-fluid .wrapper .task{
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 20px rgb(214, 214, 214);
+}
+
+.container-fluid .wrapper .add-task{
+    background-color: white;
+}
+
+.container-fluid .wrapper .add-task .form-wrapper{
+    margin-top: 4rem;
+}

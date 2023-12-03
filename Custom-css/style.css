@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(70deg, rgb(147, 128, 252), rgb(254, 99, 121), #6C9DFF);
+    height: 100vh;
+}
+
+.hero-container, .hero-section{
+    height: 90vh !important;
+}
+
+h2, p{
+    letter-spacing: 3px;
+}
+
+/* .hero-container .hero-section .col-md-5 img{
+    background: white;
+} */
