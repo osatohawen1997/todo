@@ -99,7 +99,7 @@ if(isset($_SESSION['username'])){
     </style>
 
 
-    <div class="nav-section z-index-5 border-bottom py-2 d-flex position-fixed top-0 w-100  start-0" style=" z-index: +99999;">
+    <div class="nav-section z-index-5 border-bottom py-2 d-flex" style=" z-index: +99999;">
         <span class="fs-5 d-flex align-items-center ms-4">
             <i class="fa far fa-user-circle fs-4"></i> 
             <small class="ms-1">Welcome <?php 
@@ -125,7 +125,7 @@ if(isset($_SESSION['username'])){
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row pt-5 wrapper">
+        <div class="row wrapper">
             <div class="col-md-8 position-relative task px-3 bg-light" style="height: 100vh;" id="task">
                 <div class="sub-nav shadow text-center position-absolute start-0 w-100 pt-2">
                     <p class="fs-5">MY TASK</p>

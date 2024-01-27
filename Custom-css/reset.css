@@ -1,0 +1,46 @@
+body{
+    background: #90d5f8;
+    height: 100vh;
+}
+
+.container-fluid, .row{
+    height: 100vh;
+}
+
+.signup{
+    background: #BAB1EB;
+
+}
+
+.signup:hover{
+    background: #a799f7 !important;
+    
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 991.98px) {
+    .container-fluid .row{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-fluid .row .img-container{
+        display: none;
+    }
+    
+    .container-fluid .row .form{
+        width: 80% !important;
+        
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-fluid .row .form{
+        width: 100% !important;
+        
+    }
+}

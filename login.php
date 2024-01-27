@@ -114,7 +114,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                             <input type="password" name="password" class="form-control bg-transparent border-0" placeholder="Enter Your Password" autocomplete="off">
                         </div>
                         <div class="text-start mb-4">
-                            <a href="" class="text-decoration-none"><small>Forgot password ?</small></a>
+                            <a href="reset.php" class="text-decoration-none"><small>Forgot password ?</small></a>
                             <p>Create an account <a href="signup.php" class="text-decoration-none">Sign up</a></p>
                         </div>
 

@@ -123,7 +123,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo"<script>";
         echo" if(window.innerWidth > 768){";
 
-        // header('refresh: 10;url=dashboard.php');
         echo'setTimeout(function(){
             window.location.href = "dashboard.php";}, 10000);';
 
@@ -140,7 +139,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     </div>
 
     <div class="content d-none">
-        <div class="nav-section z-index-5 py-2 d-flex position-fixed top-0 w-100  start-0" style=" z-index: +99999;">
+        <div class="nav-section z-index-5 border-bottom py-2 d-flex position-fixed top-0 w-100  start-0" style=" z-index: +99999;">
             <span class="fs-5 d-flex align-items-center ms-4">
                 <i class="fa far fa-user-circle fs-4"></i> 
                 <small class="ms-1">Welcome <?php 

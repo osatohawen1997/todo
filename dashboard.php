@@ -126,10 +126,6 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
             height: 100vh !important;
         }
 
-        .container-fluid .wrapper{
-            margin-top: 3rem;
-        }
-
         .container-fluid .wrapper .task .listing{
             padding-bottom: 4rem;
         }
@@ -139,7 +135,14 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
                 overflow: auto;
             }
 
+            .nav-section{
+                position: fixed;
+                width: 100%;
+                top: 0;
+            }
+
             .container-fluid .wrapper{
+                margin-top: 7%;
                 height: 100% !important;
             }
             
@@ -153,6 +156,7 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
             
             .container-fluid .wrapper .task .sub-nav{
                 position: fixed !important;
+                width: 100%;
             }
 
             .add-task{
@@ -164,15 +168,11 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
             }
         }
 
-        @media (max-width: 767.98px) {
-
-        }
-
 
     </style>
 
 
-    <div class="nav-section z-index-5 border-bottom py-2 d-flex position-fixed top-0 w-100  start-0" style=" z-index: +99999;">
+    <div class="nav-section border-bottom py-2 d-flex start-0" style=" z-index: +99999;">
         <span class="fs-5 d-flex align-items-center ms-4">
             <i class="fa far fa-user-circle fs-4"></i> 
             <small class="ms-1">Welcome <?php 
@@ -197,8 +197,8 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
             <a href="logout.php" class="dropdown-item"><i class="fa fas fa-power-off"></i> Log out</a>
         </div>
     </div>
-    <div class="container-fluid border">
-        <div class="row wrapper">
+    <div class="container-fluid">
+        <div class="row wrapper border">
             <div class="col-md-8 position-relative task px-3 bg-light" style="height: 100vh;" id="task">
                 <div class="sub-nav shadow text-center position-absolute start-0 w-100 pt-2">
                     <p class="fs-5">MY TASK</p>
@@ -221,7 +221,7 @@ if(isset($_POST['ld']) && isset($_POST['title']) && isset($_POST['description'])
 
                     <?php
 
-                    $sql_ii = "SELECT * FROM `task`";
+                    $sql_ii = "SELECT * FROM `task` order by rand()";
                     $result_ii = mysqli_query($connect, $sql_ii);
                     if($result_ii){
                         while($row = mysqli_fetch_assoc($result_ii)){
